@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/commuting
+    username: postgres
+    password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  data:
+    mongodb:
+#      uri: mongodb+srv://stroeradu:eEMyt%40vtzw7$aQk@cluster0.xsxxa.mongodb.net/commuting?retryWrites=true&w=majority
+      database: commuting
+      host: localhost
+      port: 27017
+#      username: postgres
+#      password: eEMyt@vtzw7$aQk

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="#{email.verification.title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" th:href="@{|${baseUrl}/favicon.ico|}"/>
+</head>
+<body>
+<p th:text="#{email.verification.greeting(${user.getName()})}"></p>
+<p th:text="#{email.verification.text1(${user.getCode()})}">
+</p>
+<p>
+    <span th:text="#{email.verification.text2}"></span>
+    <br/>
+    <em th:text="#{email.signature}"></em>
+</p>
+</body>
+</html>

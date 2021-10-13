@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar $PATH_TO_JAR -agentlib:jdwp=transport=dt_socket,server=y,address=9090,suspend=n
