@@ -14,9 +14,9 @@ public class SmsServiceImpl implements SmsService {
 
     private final Logger log = LoggerFactory.getLogger(SmsServiceImpl.class);
 
-    public static final String ACCOUNT_SID = "ACdafd86724d1663441d1e80d8ae488f1c";
-    public static final String AUTH_TOKEN = "934ff1acbe6201086bf1cb2a126f8638";
-    public static final String SERVICE_ID = "VA69f5155b651aa7453958bc5493d6d36e";
+    public static final String ACCOUNT_SID = "";
+    public static final String AUTH_TOKEN = "";
+    public static final String SERVICE_ID = "";
 
     @PostConstruct
     void init() {
